@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<img src="http://www.railsbridge-montreal.com/assets/logo-afba3608b2c1b1deed34c562a1f27f81.png" height="63" width="32">
 <h1>Topics</h1>
 
 <table>
@@ -12,13 +12,14 @@
   </thead>
 
   <tbody>
+
     <% @topics.each do |topic| %>
       <tr>
         <td><%= topic.title %></td>
         <td><%= topic.description %></td>
-        <td><%= link_to 'Show', topic %></td>
-        <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-        <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show/Voir', topic %></td>
+        <td><%= link_to 'Edit/Éditer', edit_topic_path(topic) %></td>
+        <td><%= link_to 'Destroy/Détruire', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
