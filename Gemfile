@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3' removed and replace by following (Step2)
+#gem 'sqlite3' removed and replaced by following (deploying_to_heroku/Step2)
 group :development, :test do
   gem 'sqlite3'
 end
